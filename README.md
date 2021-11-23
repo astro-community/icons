@@ -2,6 +2,8 @@
 
 A crisp set of 15×15 icons designed by the [Modulz](https://modulz.app/) team.
 
+[Try them right now on StackBlitz](https://stackblitz.com/github/astro-community/icons/tree/main/example)
+
 ## Usage
 
 All icons are available as individual Astro components. Install them from npm:

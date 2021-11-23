@@ -1,0 +1,26 @@
+---
+import * as Icon from '@astropub/icons'
+
+const { size = 15, width = size, height = size, ...more } = Astro.props
+---
+<section>
+	<h3>Borders and Corners</h3>
+	<div>
+		<Icon.BorderAll width={width} height={height} aria-label="Border All" />
+		<Icon.BorderSplit width={width} height={height} aria-label="Border Split" />
+		<Icon.BorderNone width={width} height={height} aria-label="Border None" />
+		<Icon.BorderLeft width={width} height={height} aria-label="Border Left" />
+		<Icon.BorderRight width={width} height={height} aria-label="Border Right" />
+		<Icon.BorderTop width={width} height={height} aria-label="Border Top" />
+		<Icon.BorderBottom width={width} height={height} aria-label="Border Bottom" />
+		<Icon.Corners width={width} height={height} aria-label="Corners" />
+		<Icon.CornerTopLeft width={width} height={height} aria-label="Corner Top Left " />
+		<Icon.CornerTopRight width={width} height={height} aria-label="Corner Top Right " />
+		<Icon.CornerBottomLeft width={width} height={height} aria-label="Corner Bottom Left " />
+		<Icon.CornerBottomRight width={width} height={height} aria-label="Corner Bottom Right " />
+		<Icon.BorderStyle width={width} height={height} aria-label="Border Style" />
+		<Icon.BorderSolid width={width} height={height} aria-label="Border Solid" />
+		<Icon.BorderDashed width={width} height={height} aria-label="Border Dashed" />
+		<Icon.BorderDotted width={width} height={height} aria-label="Border Dotted" />
+	</div>
+</section>

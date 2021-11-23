@@ -1,0 +1,22 @@
+---
+import * as Icon from '@astropub/icons'
+
+const { size = 15, width = size, height = size, ...more } = Astro.props
+---
+<section>
+	<h3>Music</h3>
+	<div>
+		<Icon.Play width={width} height={height} aria-label="Play" />
+		<Icon.Resume width={width} height={height} aria-label="Resume" />
+		<Icon.Pause width={width} height={height} aria-label="Pause" />
+		<Icon.Stop width={width} height={height} aria-label="Stop" />
+		<Icon.TrackPrevious width={width} height={height} aria-label="Track Previous" />
+		<Icon.TrackNext width={width} height={height} aria-label="Track Next" />
+		<Icon.Loop width={width} height={height} aria-label="Loop" />
+		<Icon.Shuffle width={width} height={height} aria-label="Shuffle" />
+		<Icon.SpeakerLoud width={width} height={height} aria-label="Speaker Loud" />
+		<Icon.SpeakerModerate width={width} height={height} aria-label="Speaker Moderate" />
+		<Icon.SpeakerQuiet width={width} height={height} aria-label="Speaker Quiet" />
+		<Icon.SpeakerOff width={width} height={height} aria-label="Speaker Off" />
+	</div>
+</section>

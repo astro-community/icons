@@ -1,0 +1,26 @@
+---
+import * as Icon from '@astropub/icons'
+
+const { size = 15, width = size, height = size, ...more } = Astro.props
+---
+<section>
+	<h3>Alignment</h3>
+	<div>
+		<Icon.AlignTop width={width} height={height} aria-label="Align Top" />
+		<Icon.AlignCenterVertically width={width} height={height} aria-label="Align Center Vertically " />
+		<Icon.AlignBottom width={width} height={height} aria-label="Align Bottom" />
+		<Icon.StretchVertically width={width} height={height} aria-label="Stretch Vertically" />
+		<Icon.AlignLeft width={width} height={height} aria-label="Align Left" />
+		<Icon.AlignCenterHorizontally width={width} height={height} aria-label="Align Center Horizontally " />
+		<Icon.AlignRight width={width} height={height} aria-label="Align Right" />
+		<Icon.StretchHorizontally width={width} height={height} aria-label="Stretch Horizontally" />
+		<Icon.SpaceBetweenHorizontally width={width} height={height} aria-label="Space Between Horizontally" />
+		<Icon.SpaceEvenlyHorizontally width={width} height={height} aria-label="Space Evenly Horizontally" />
+		<Icon.SpaceBetweenVertically width={width} height={height} aria-label="Space Between Vertically" />
+		<Icon.SpaceEvenlyVertically width={width} height={height} aria-label="Space Evenly Vertically" />
+		<Icon.PinLeft width={width} height={height} aria-label="Pin Left" />
+		<Icon.PinRight width={width} height={height} aria-label="Pin Right" />
+		<Icon.PinTop width={width} height={height} aria-label="Pin Top" />
+		<Icon.PinBottom width={width} height={height} aria-label="Pin Bottom" />
+	</div>
+</section>

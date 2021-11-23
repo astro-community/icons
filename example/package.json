@@ -1,0 +1,15 @@
+{
+  "name": "@example/icons",
+  "description": "Radix Icons in Astro",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "astro dev",
+    "build": "astro build",
+    "serve": "astro preview"
+  },
+  "devDependencies": {
+    "@astropub/icons": "^0.1.0",
+    "astro": "^0.21.2"
+  }
+}
