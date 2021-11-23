@@ -1,7 +1,7 @@
 {
   "name": "@astropub/icons",
   "description": "Radix Icons for Astro",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "exports": {
     ".": "./Icon.ts",
