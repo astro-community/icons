@@ -9,7 +9,7 @@
     "serve": "astro preview"
   },
   "devDependencies": {
-    "@astropub/icons": "^0.1.0",
+    "@astropub/icons": "^0.1.1",
     "astro": "^0.21.2"
   }
 }
