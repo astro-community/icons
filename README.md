@@ -612,13 +612,13 @@ import * as Icon from '@astropub/icons'
 <Icon.Code />
 ```
 
-### Codesandbox Logo
+### CodeSandbox Logo
 
 ```astro
 ---
 import * as Icon from '@astropub/icons'
 ---
-<Icon.CodesandboxLogo />
+<Icon.CodeSandboxLogo />
 ```
 
 ### Column Spacing
@@ -1314,13 +1314,13 @@ import * as Icon from '@astropub/icons'
 <Icon.Gear />
 ```
 
-### Github Logo
+### GitHub Logo
 
 ```astro
 ---
 import * as Icon from '@astropub/icons'
 ---
-<Icon.GithubLogo />
+<Icon.GitHubLogo />
 ```
 
 ### Globe
@@ -1413,13 +1413,13 @@ import * as Icon from '@astropub/icons'
 <Icon.Home />
 ```
 
-### Iconjar Logo
+### IconJar Logo
 
 ```astro
 ---
 import * as Icon from '@astropub/icons'
 ---
-<Icon.IconjarLogo />
+<Icon.IconJarLogo />
 ```
 
 ### Id Card

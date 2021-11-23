@@ -157,7 +157,26 @@ for (const file of await fs.readdir(radixIconsDest, { encoding: 'utf8' })) {
 
 	await fs.rm(filepath, { force: true, recursive: true })
 
-	const title = file.replace(/\.svg$/, '').replace(/(?<=^|-)([a-z0-9])/g, ($0, $1) => $1.toUpperCase()).replace(/[^A-Za-z0-9]+/g, ' ')
+	const title = file.replace(
+		/\.svg$/,
+		''
+	).replace(
+		/(?<=^|-)([a-z0-9])/g,
+		($0, $1) => $1.toUpperCase()
+	).replace(
+		/[^A-Za-z0-9]+/g,
+		' '
+	).replace(
+		'Codesandbox Logo',
+		'CodeSandbox Logo'
+	).replace(
+		'Github Logo',
+		'GitHub Logo'
+	).replace(
+		'Iconjar Logo',
+		'IconJar Logo'
+	)
+
 	const id = title.replace(/ /g, '')
 
 	const destdata = getAstroIcon(filedata, title)
