@@ -1,0 +1,33 @@
+---
+/*! radix-icons | MIT License | https://icons.modulz.app/ */
+
+export interface Props {
+	'fill-rule'?: string
+	'fill'?: string
+	'height'?: number | string
+	'size'?: number | string
+	'title'?: string
+	'viewBox'?: string
+	'width'?: number | string
+}
+
+const {
+	size,
+	title,
+	width = size,
+	height = size,
+	...props
+} = {
+	'fill': 'CurrentColor',
+	'fill-rule': 'evenodd',
+	'size': 15,
+	'title': 'Vercel Logo',
+	'viewBox': '0 0 15 15',
+	...Astro.props
+}
+---
+<svg {width} {height} {...props}>{title ?
+	<title>{title}</title>
+: ''}
+	<path d="m7.5 1-.577 1.003L1.175 12 .6 13h13.8l-.575-1-5.748-9.997L7.5 1Zm0 2.006L2.329 12H12.67L7.5 3.006Z" />
+</svg>

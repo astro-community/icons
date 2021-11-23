@@ -1,0 +1,77 @@
+{
+  "name": "@astropub/icons",
+  "description": "Radix Icons for Astro",
+  "version": "0.1.0",
+  "type": "module",
+  "exports": {
+    ".": "./Icon.ts",
+    "./*": "./icons/*.astro"
+  },
+  "files": [
+    "Icon.astro",
+    "Icon.ts",
+    "icons"
+  ],
+  "keywords": [
+    "15",
+    "15x15",
+    "astro",
+    "astro-component",
+    "astro component",
+    "astro icon",
+    "astro icons",
+    "collection",
+    "component",
+    "components",
+    "crisp",
+    "design",
+    "designed",
+    "designer",
+    "group",
+    "icon",
+    "icons",
+    "icon pack",
+    "import",
+    "importable",
+    "imports",
+    "modulz",
+    "pack",
+    "radix",
+    "radixui",
+    "radix icon",
+    "radix icons",
+    "radix ui",
+    "selection",
+    "vector",
+    "vectors",
+    "svg",
+    "svgs",
+    "ui",
+    "ux"
+  ],
+  "license": "MIT",
+  "repository": "astro-community/icons",
+  "author": "Jonathan Neal <jonathantneal@hotmail.com>",
+  "authors": [
+    "Vlad Moroz <vlad@modulz.app>",
+    "Pedro Duarte <pedro@modulz.app>",
+    "Colm Tuite <colm@modulz.app>"
+  ],
+  "bugs": "https://github.com/astro-community/icons/issues",
+  "homepage": "https://github.com/astro-community/icons#readme",
+  "devDependencies": {
+    "@skypack/package-check": "0.2.2",
+    "adm-zip": "^0.5.9",
+    "astro": "^0.21.0-next.7",
+    "node-fetch": "^3.1.0",
+    "svgo": "^2.8.0"
+  },
+  "peerDependencies": {
+    "astro": "*"
+  },
+  "scripts": {
+    "prepare": "node .task/prepare.js",
+    "release": "npm publish --access public",
+    "test": "package-check"
+  }
+}

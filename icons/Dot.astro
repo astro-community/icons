@@ -1,0 +1,33 @@
+---
+/*! radix-icons | MIT License | https://icons.modulz.app/ */
+
+export interface Props {
+	'fill-rule'?: string
+	'fill'?: string
+	'height'?: number | string
+	'size'?: number | string
+	'title'?: string
+	'viewBox'?: string
+	'width'?: number | string
+}
+
+const {
+	size,
+	title,
+	width = size,
+	height = size,
+	...props
+} = {
+	'fill': 'CurrentColor',
+	'fill-rule': 'evenodd',
+	'size': 15,
+	'title': 'Dot',
+	'viewBox': '0 0 15 15',
+	...Astro.props
+}
+---
+<svg {width} {height} {...props}>{title ?
+	<title>{title}</title>
+: ''}
+	<path d="M7.5 9.125a1.625 1.625 0 1 0 0-3.25 1.625 1.625 0 0 0 0 3.25Zm0 1a2.625 2.625 0 1 0 0-5.25 2.625 2.625 0 0 0 0 5.25Z" />
+</svg>
