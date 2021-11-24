@@ -6,6 +6,8 @@ A crisp set of 15×15 icons designed by the [Modulz](https://modulz.app/) team.
 
 [Try them right now on StackBlitz](https://stackblitz.com/github/astro-community/icons/tree/main/example)
 
+
+
 ## Usage
 
 All icons are available as individual Astro components. Install them from npm:
@@ -21,7 +23,12 @@ Import the icons into your Astro project:
 import * as Icon from '@astropub/icons'
 ---
 <Icon.Sun />
+<Icon.Moon />
+<Icon.Star />
+<Icon.LightningBolt size="60" fill="gold" />
 ```
+
+
 
 ## Icons
 
@@ -2705,6 +2712,8 @@ import * as Icon from '@astropub/icons'
 <!-- CLOSING OF ICONS -->
 
 ---
+
+
 
 ## License
 
