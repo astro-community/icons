@@ -9,7 +9,7 @@
     "serve": "astro preview"
   },
   "dependencies": {
-    "@astropub/icons": "^0.1.1",
+    "@astropub/icons": "^0.2.0",
     "@stitches/stringify": "1.2.5",
     "astro": "^0.21.3"
   }
