@@ -1,0 +1,32 @@
+---
+export interface Props {
+	title?: string
+	description?: string
+	image?: string
+	url?: string
+	pathname?: string
+}
+
+const {
+	title = 'Radix UI',
+	description = 'Everything you need to build a design system, website or web app.',
+	image,
+	url = 'https://radix-ui.com',
+	pathname,
+} = Astro.props
+
+const imageUrl = `${url}/social/${image || 'default.png'}`;
+const path = pathname || Astro.site.pathname;
+const ogUrl = `${url}${path}`
+---
+<title>{title}</title>
+
+<meta name="description" content={description} />
+
+<meta property="og:url" content={ogUrl} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={imageUrl} />
+
+<meta name="twitter:site" content="@radix_ui" />
+<meta name="twitter:card" content="summary_large_image" />

@@ -1,6 +1,6 @@
 {
-  "name": "@astropub/icons-example",
-  "description": "Radix Icons in Astro Example",
+  "name": "@astropub/icons-website",
+  "description": "Radix Icons in Astro Website",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -8,8 +8,9 @@
     "build": "astro build",
     "serve": "astro preview"
   },
-  "devDependencies": {
+  "dependencies": {
     "@astropub/icons": "^0.1.1",
+    "@stitches/stringify": "1.2.5",
     "astro": "^0.21.3"
   }
 }

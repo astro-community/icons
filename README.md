@@ -1,4 +1,4 @@
-![Radix Icons](.task/radix-icons.png)
+![Radix Icons](website/public/radix-icons.png)
 
 # Radix Icons for Astro
 

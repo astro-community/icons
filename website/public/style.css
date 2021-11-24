@@ -1,0 +1,42 @@
+:root {
+	font: 100%/1.5 sans-serif;
+	color-scheme: light;
+}
+
+body {
+	margin: 2rem 1rem;
+}
+
+h1 {
+	font-size: 1.75rem;
+	margin: 0 auto;
+	max-width: 60rem;
+	text-align: center;
+}
+
+main {
+	display: grid;
+	gap: 2rem;
+	margin: 0 auto;
+	max-width: 56rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin: 3rem 0 1.5rem;
+}
+
+h3 + div {
+	display: flex;
+	flex-wrap: wrap;
+	gap: .25rem;
+}
+
+h3 + div > svg {
+	border-radius: .25rem;
+	padding: .25rem;
+}
+
+h3 + div > svg:hover {
+	background-color: hsla(0deg 0% 50% / 25%);
+}

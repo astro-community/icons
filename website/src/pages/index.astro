@@ -1,0 +1,48 @@
+---
+import Abstract from '../components/Abstract.astro'
+import Alignment from '../components/Alignment.astro'
+import Arrows from '../components/Arrows.astro'
+import BordersAndCorners from '../components/BordersAndCorners.astro'
+import Components from '../components/Components.astro'
+import Design from '../components/Design.astro'
+import Logos from '../components/Logos.astro'
+import Music from '../components/Music.astro'
+import Objects from '../components/Objects.astro'
+import Typography from '../components/Typography.astro'
+import TitleAndMetaTags from '../components/TitleAndMetaTags.astro'
+---
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<TitleAndMetaTags />
+	<meta name="viewport" content="width=device-width" />
+	<meta name="color-scheme" content="dark light" />
+	<meta name="theme-color" content="hsl(206,12%,96%)">
+	<link rel="icon" href="/favicon.svg" />
+	<link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+	<h1>Radix Icons in Astro</h1>
+	<main>
+		<div style="grid-column: 1">
+			<Arrows size="30" />
+			<Components size="30" />
+			<Design size="30" />
+		</div>
+		<div style="grid-column: 2">
+			<Objects size="30" />
+			<Typography size="30" />
+			<Music size="30" />
+		</div>
+		<div style="grid-column: 3">
+			<Alignment size="30" />
+			<Abstract size="30" />
+			<BordersAndCorners size="30" />
+			<Logos size="30" />
+		</div>
+	</main>
+</body>
+
+</html>

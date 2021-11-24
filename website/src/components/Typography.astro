@@ -1,0 +1,34 @@
+---
+import * as Icon from '@astropub/icons'
+
+const { size = 15, width = size, height = size, ...more } = Astro.props
+---
+<section>
+	<h3>Typography</h3>
+	<div>
+		<Icon.FontStyle width={width} height={height} aria-label="Font Style" />
+		<Icon.FontItalic width={width} height={height} aria-label="Font Italic" />
+		<Icon.FontRoman width={width} height={height} aria-label="Font Roman" />
+		<Icon.FontBold width={width} height={height} aria-label="Font Bold" />
+		<Icon.LetterCaseUppercase width={width} height={height} aria-label="Letter Case Uppercase " />
+		<Icon.LetterCaseCapitalize width={width} height={height} aria-label="Letter Case Capitalize " />
+		<Icon.LetterCaseLowercase width={width} height={height} aria-label="Letter Case Lowercase " />
+		<Icon.LetterCaseToggle width={width} height={height} aria-label="Letter Case Toggle " />
+		<Icon.LetterSpacing width={width} height={height} aria-label="Letter Spacing" />
+		<Icon.AlignBaseline width={width} height={height} aria-label="Align Baseline" />
+		<Icon.FontSize width={width} height={height} aria-label="Font Size" />
+		<Icon.FontFamily width={width} height={height} aria-label="Font Family" />
+		<Icon.Heading width={width} height={height} aria-label="Heading" />
+		<Icon.Text width={width} height={height} aria-label="Text" />
+		<Icon.TextNone width={width} height={height} aria-label="Text None" />
+		<Icon.LineHeight width={width} height={height} aria-label="Line Height" />
+		<Icon.Underline width={width} height={height} aria-label="Underline" />
+		<Icon.Strikethrough width={width} height={height} aria-label="Strikethrough" />
+		<Icon.Overline width={width} height={height} aria-label="Overline" />
+		<Icon.Pilcrow width={width} height={height} aria-label="Pilcrow" />
+		<Icon.TextAlignLeft width={width} height={height} aria-label="Text Align Left " />
+		<Icon.TextAlignCenter width={width} height={height} aria-label="Text Align Center " />
+		<Icon.TextAlignRight width={width} height={height} aria-label="Text Align Right " />
+		<Icon.TextAlignJustify width={width} height={height} aria-label="Text Align Justify " />
+	</div>
+</section>

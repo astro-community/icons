@@ -62,7 +62,7 @@
   "devDependencies": {
     "@skypack/package-check": "0.2.2",
     "adm-zip": "^0.5.9",
-    "astro": "^0.21.0-next.7",
+    "astro": "^0.21.3",
     "node-fetch": "^3.1.0",
     "svgo": "^2.8.0"
   },
@@ -70,8 +70,27 @@
     "astro": "*"
   },
   "scripts": {
+    "website:build": "npm --prefix website install",
+    "website:start": "npm --prefix website start",
     "prepare": "node .task/prepare.js",
     "release": "npm publish --access public",
     "test": "package-check"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "useTabs": true,
+    "overrides": [
+      {
+        "files": [
+          ".stackblitzrc",
+          "*.json"
+        ],
+        "options": {
+          "useTabs": false
+        }
+      }
+    ]
   }
 }
