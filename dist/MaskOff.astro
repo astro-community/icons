@@ -1,0 +1,26 @@
+---
+/*! radix-icons | MIT License | https://icons.modulz.app/ */
+
+export { Props } from './Props.ts';
+
+let {
+	size,
+	title,
+	width = size,
+	height = size,
+	...props
+} = {
+	'fill': 'CurrentColor',
+	'fill-rule': 'evenodd',
+	'title': 'Mask Off',
+	'viewBox': '0 0 15 15',
+	...Astro.props
+}
+
+const toAttributeSize = (size: number) => String(size).replace(/(?<=[0-9])x$/, 'em')
+
+size = toAttributeSize(size)
+width = toAttributeSize(width)
+height = toAttributeSize(height)
+---
+<svg {width} {height} {...props}>{title ? (<title>{title}</title>) : ''}<path d="M1 2h13v11H1V2ZM0 2a1 1 0 0 1 1-1h13a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V2Zm4.875 5.5a2.625 2.625 0 1 1 5.25 0 2.625 2.625 0 0 1-5.25 0ZM7.5 3.875a3.625 3.625 0 1 0 0 7.25 3.625 3.625 0 0 0 0-7.25Z" /></svg>

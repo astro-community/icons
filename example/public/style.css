@@ -1,6 +1,8 @@
 :root {
-	font: 100%/1.5 sans-serif;
+	background-color: #ffffff;
+	color: #111111;
 	color-scheme: light;
+	font: 100%/1.5 sans-serif;
 }
 
 body {

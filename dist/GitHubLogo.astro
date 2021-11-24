@@ -1,0 +1,26 @@
+---
+/*! radix-icons | MIT License | https://icons.modulz.app/ */
+
+export { Props } from './Props.ts';
+
+let {
+	size,
+	title,
+	width = size,
+	height = size,
+	...props
+} = {
+	'fill': 'CurrentColor',
+	'fill-rule': 'evenodd',
+	'title': 'GitHub Logo',
+	'viewBox': '0 0 15 15',
+	...Astro.props
+}
+
+const toAttributeSize = (size: number) => String(size).replace(/(?<=[0-9])x$/, 'em')
+
+size = toAttributeSize(size)
+width = toAttributeSize(width)
+height = toAttributeSize(height)
+---
+<svg {width} {height} {...props}>{title ? (<title>{title}</title>) : ''}<path d="M7.5.85a6.65 6.65 0 0 0-2.102 12.96c.332.061.454-.144.454-.32 0-.159-.006-.576-.01-1.131-1.849.401-2.24-.892-2.24-.892-.302-.768-.738-.973-.738-.973-.604-.412.046-.404.046-.404.667.047 1.018.685 1.018.685.594 1.017 1.557.723 1.936.553.06-.43.232-.723.422-.889-1.477-.168-3.029-.738-3.029-3.287 0-.726.26-1.319.685-1.784-.069-.168-.297-.844.065-1.76 0 0 .558-.179 1.828.681.53-.147 1.1-.22 1.665-.223a6.394 6.394 0 0 1 1.665.223c1.27-.86 1.827-.68 1.827-.68.363.915.135 1.59.066 1.759.427.465.684 1.058.684 1.784 0 2.555-1.555 3.117-3.036 3.282.238.205.45.611.45 1.232 0 .888-.007 1.605-.007 1.823 0 .178.12.385.457.32A6.652 6.652 0 0 0 7.499.85Z" /></svg>

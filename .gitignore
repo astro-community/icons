@@ -6,4 +6,3 @@ yarn.lock
 !.editorconfig
 !.gitignore
 !.npmrc
-!.task

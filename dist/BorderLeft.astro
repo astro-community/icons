@@ -1,0 +1,26 @@
+---
+/*! radix-icons | MIT License | https://icons.modulz.app/ */
+
+export { Props } from './Props.ts';
+
+let {
+	size,
+	title,
+	width = size,
+	height = size,
+	...props
+} = {
+	'fill': 'CurrentColor',
+	'fill-rule': 'evenodd',
+	'title': 'Border Left',
+	'viewBox': '0 0 15 15',
+	...Astro.props
+}
+
+const toAttributeSize = (size: number) => String(size).replace(/(?<=[0-9])x$/, 'em')
+
+size = toAttributeSize(size)
+width = toAttributeSize(width)
+height = toAttributeSize(height)
+---
+<svg {width} {height} {...props}>{title ? (<title>{title}</title>) : ''}<path d="M1.75 1v13H.25V1h1.5Z" /><rect width="1" height="1" x="10" y="7" rx=".5" transform="rotate(90 10 7)" /><rect width="1" height="1" x="10" y="13" rx=".5" transform="rotate(90 10 13)" /><rect width="1" height="1" x="12" y="7" rx=".5" transform="rotate(90 12 7)" /><rect width="1" height="1" x="12" y="13" rx=".5" transform="rotate(90 12 13)" /><rect width="1" height="1" x="8" y="7" rx=".5" transform="rotate(90 8 7)" /><rect width="1" height="1" x="14" y="7" rx=".5" transform="rotate(90 14 7)" /><rect width="1" height="1" x="8" y="13" rx=".5" transform="rotate(90 8 13)" /><rect width="1" height="1" x="14" y="13" rx=".5" transform="rotate(90 14 13)" /><rect width="1" height="1" x="8" y="5" rx=".5" transform="rotate(90 8 5)" /><rect width="1" height="1" x="14" y="5" rx=".5" transform="rotate(90 14 5)" /><rect width="1" height="1" x="8" y="3" rx=".5" transform="rotate(90 8 3)" /><rect width="1" height="1" x="14" y="3" rx=".5" transform="rotate(90 14 3)" /><rect width="1" height="1" x="8" y="9" rx=".5" transform="rotate(90 8 9)" /><rect width="1" height="1" x="14" y="9" rx=".5" transform="rotate(90 14 9)" /><rect width="1" height="1" x="8" y="11" rx=".5" transform="rotate(90 8 11)" /><rect width="1" height="1" x="14" y="11" rx=".5" transform="rotate(90 14 11)" /><rect width="1" height="1" x="6" y="7" rx=".5" transform="rotate(90 6 7)" /><rect width="1" height="1" x="6" y="13" rx=".5" transform="rotate(90 6 13)" /><rect width="1" height="1" x="4" y="7" rx=".5" transform="rotate(90 4 7)" /><rect width="1" height="1" x="4" y="13" rx=".5" transform="rotate(90 4 13)" /><rect width="1" height="1" x="10" y="1" rx=".5" transform="rotate(90 10 1)" /><rect width="1" height="1" x="12" y="1" rx=".5" transform="rotate(90 12 1)" /><rect width="1" height="1" x="8" y="1" rx=".5" transform="rotate(90 8 1)" /><rect width="1" height="1" x="14" y="1" rx=".5" transform="rotate(90 14 1)" /><rect width="1" height="1" x="6" y="1" rx=".5" transform="rotate(90 6 1)" /><rect width="1" height="1" x="4" y="1" rx=".5" transform="rotate(90 4 1)" /></svg>

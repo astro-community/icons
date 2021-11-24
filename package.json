@@ -4,13 +4,11 @@
   "version": "0.1.1",
   "type": "module",
   "exports": {
-    ".": "./Icon.ts",
-    "./*": "./icons/*.astro"
+    ".": "./dist/index.ts",
+    "./*": "./dist/*.astro"
   },
   "files": [
-    "Icon.astro",
-    "Icon.ts",
-    "icons"
+    "dist"
   ],
   "keywords": [
     "15",
@@ -72,7 +70,7 @@
   "scripts": {
     "website:build": "npm --prefix website install",
     "website:start": "npm --prefix website start",
-    "prepare": "node .task/prepare.js",
+    "build": "node build.js",
     "release": "npm publish --access public",
     "test": "package-check"
   },
