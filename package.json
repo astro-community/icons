@@ -3,6 +3,7 @@
   "description": "Radix Icons for Astro",
   "version": "0.2.0",
   "type": "module",
+  "main": "./dist/index.ts",
   "exports": {
     ".": "./dist/index.ts",
     "./*": "./dist/*.astro"
